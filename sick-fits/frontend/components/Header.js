@@ -1,11 +1,29 @@
 import Link from 'next/link';
+import styled from 'styled-components';
 import Nav from './Nav';
+
+const Logo = styled.h1`
+  background: red;
+  font-size: 4rem;
+  margin-left: 2rem;
+  position: relative;
+  z-index: 2;
+  transform: skew(-7deg);
+  a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+`;
 
 export default function Header() {
   return (
     <header>
       <div className="bar">
-        <Link href="/">MD SADIK HASAN</Link>
+        <Logo>
+          <Link href="/">MD SADIK HASAN</Link>
+        </Logo>
       </div>
       <div className="sub-bar">
         <p>Search</p>
