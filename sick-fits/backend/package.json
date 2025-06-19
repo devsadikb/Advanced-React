@@ -5,7 +5,7 @@
   "author": "Wes Bos",
   "license": "MIT",
   "scripts": {
-    "dev": "NODE_OPTIONS=--openssl-legacy-provider keystone-next",
+    "dev": "keystone-next",
     "seed-data": "keystone-next --seed-data"
   },
   "eslintConfig": {
