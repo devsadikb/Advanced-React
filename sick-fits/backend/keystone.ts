@@ -6,6 +6,7 @@ import {
     statelessSessions,
 } from '@keystone-next/keystone/session';
 import { User } from './schemas/User';
+import { Product } from './schemas/Product';
 
 const databaseURL =
     process.env.DATABASE_URL || 'mongodb://localhost:27017/sadik';
@@ -36,6 +37,7 @@ export default withAuth(
         lists: createSchema({
             // schemas items will be added here
             User,
+            Product,
         }),
         ui: {
             isAccessAllowed: ({ session }) =>
