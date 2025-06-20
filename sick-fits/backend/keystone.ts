@@ -38,11 +38,9 @@ export default withAuth(
             User,
         }),
         ui: {
-            isAccessAllowed: ({ session }) => {
+            isAccessAllowed: ({ session }) =>
                 // Allow access to the UI if the user is signed in
-                console.log(session);
-                return !!session?.data;
-            },
+                !!session?.data,
         },
         session: withItemData(statelessSessions(sessionConfig), {
             User: 'id',
