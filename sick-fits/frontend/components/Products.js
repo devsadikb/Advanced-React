@@ -1,3 +1,4 @@
+import { useQuery } from '@apollo/client';
 import gql from 'graphql-tag';
 
 const ALL_PRODUCTS_QUERY = gql`
@@ -17,6 +18,7 @@ const ALL_PRODUCTS_QUERY = gql`
   }
 `;
 export default function Products() {
+  useQuery(ALL_PRODUCTS_QUERY);
   return (
     <div>
       <p>Products</p>
