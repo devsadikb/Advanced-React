@@ -18,7 +18,7 @@ const ALL_PRODUCTS_QUERY = gql`
   }
 `;
 export default function Products() {
-  useQuery(ALL_PRODUCTS_QUERY);
+  const { data, loading, error } = useQuery(ALL_PRODUCTS_QUERY);
   return (
     <div>
       <p>Products</p>
