@@ -24,7 +24,7 @@ export default function Products() {
   if (error) return <p>Error: {error.message}</p>;
   return (
     <div>
-      <div>{}</div>
+      <div>{data.allProducts.map}</div>
     </div>
   );
 }
