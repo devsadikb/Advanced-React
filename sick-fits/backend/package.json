@@ -35,6 +35,8 @@
     ]
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.835.0",
+    "@aws-sdk/client-ses": "^3.835.0",
     "@keystone-next/admin-ui": "^8.0.1",
     "@keystone-next/auth": "^14.0.0",
     "@keystone-next/cloudinary": "^2.0.9",
