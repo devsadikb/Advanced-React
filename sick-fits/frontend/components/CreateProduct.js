@@ -12,6 +12,7 @@ export default function CreateProduct() {
           name="name"
           placeholder="name"
           value={Name}
+          onChange={(e) => setName(e.target.value)}
         />
       </label>
     </form>
