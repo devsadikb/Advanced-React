@@ -55,7 +55,7 @@ export default function CreateProduct() {
             image: inputs.image,
           },
         });
-        console.log(res);
+        clearForm();
       }}
     >
       <DisplayError error={error} />
