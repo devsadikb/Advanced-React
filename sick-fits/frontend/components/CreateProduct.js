@@ -47,7 +47,7 @@ export default function CreateProduct() {
         console.log(inputs);
 
         // Pass variables in the function call
-        const res = await createProduct({
+        await createProduct({
           variables: {
             name: inputs.name,
             description: inputs.description,
