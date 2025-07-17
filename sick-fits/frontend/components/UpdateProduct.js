@@ -40,16 +40,19 @@ export default function UpdateProduct({ id }) {
   const [
     updateProduct,
     { data: updateData, errror: updateError, loading: updateLoading },
-  ] = useMutation(UPDATE_PRODUCT_MUTATION, {
-    variables: { id },
-  });
+  ] = useMutation(UPDATE_PRODUCT_MUTATION);
   const { inputs, handleChange, resetForm, clearForm } = useForm(data?.Product);
   if (loading) return <p>Loading...</p>;
   return (
     <Form
       onSubmit={async (e) => {
         e.preventDefault();
-        const res = updateProduct();
+        const res = await updateProduct({
+          variables: {
+            id,
+            data: inputs,
+          },
+        });
         console.log(res);
         // Pass variables in the function call
         /* const res = await createProduct({
