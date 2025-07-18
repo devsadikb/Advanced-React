@@ -56,6 +56,20 @@ export default function UpdateProduct({ id }) {
           },
         });
         console.log(res);
+        // Pass variables in the function call
+        /* const res = await createProduct({
+          variables: {
+            name: inputs.name,
+            description: inputs.description,
+            price: parseInt(inputs.price),
+            image: inputs.image,
+          },
+          refetchQueries: [{ query: ALL_PRODUCTS_QUERY }],
+        });
+        clearForm();
+        Router.push({
+          pathname: `/products/${res.data.createProduct.id}`,
+        }); */
       }}
     >
       <DisplayError error={error || updateError} />
