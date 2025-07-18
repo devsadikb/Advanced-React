@@ -44,7 +44,7 @@ export default function SingleProduct({ id }) {
   return (
     <ProductStyles>
       <Head>
-        <title>MD SADIK HASAN | {Product.name}</title>
+        <title>SADIK | {Product.name}</title>
       </Head>
       <img
         src={Product.photo.image.publicUrlTransformed}
