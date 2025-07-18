@@ -26,7 +26,7 @@ export default function Product({ product }) {
         >
           Edit ✏️
         </Link>
-        <DeleteProduct>Delet</DeleteProduct>
+        <DeleteProduct id={product.id}>Delet</DeleteProduct>
       </div>
     </ItemStyles>
   );
